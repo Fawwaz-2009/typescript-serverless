@@ -59,12 +59,12 @@ provider:
 #    - include-me-dir/**
 
 functions:
-  hello:
-    handler: app/handler.hakuna
-    events:
-      - http:
-          path: hakuna
-          method: post
+  # hello:
+  #   handler: app/handler.hakuna
+  #   events:
+  #     - http:
+  #         path: hakuna
+  #         method: post
 
   getTest:
     handler: app/handler.getTest
