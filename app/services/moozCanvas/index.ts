@@ -10,8 +10,8 @@ export async function creatImageFromTemplate(templateId:string, edits: Edit[]) {
 
     const {templateUrl, editables} = await fetchTemplate(templateId)
     // TODO add fetching + loading the font (should be an array) (can't be at the driver level since all fonts has to be loaded before the canvas is created)
-    const fonts = editables.map(editable=> editable.font);
-    await loadAndRegisterFonts(fonts);
+    // const fonts = editables.map(editable=> editable.font);
+    // await loadAndRegisterFonts(fonts);
 
     const serializedEditables = serializeEditables(editables, edits)
 
