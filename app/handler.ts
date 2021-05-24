@@ -1,7 +1,7 @@
 import { Handler, Context } from 'aws-lambda';
 import debug from 'debug';
 import { creatImageFromTemplate } from './services/moozCanvas';
-import { createCanvas } from "../../lambda-layer-canvas-nodejs/nodejs/node_modules/canvas"
+import { createCanvas } from "canvas"
 
 // import dotenv from 'dotenv';
 // import path from 'path';

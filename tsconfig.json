@@ -3,7 +3,7 @@
     "baseUrl": "./",                       /* Base directory to resolve non-absolute module names. */
     "paths": {
       "@/*": ["app/*"],
-      "../../lambda-layer-canvas-nodejs/nodejs/node_modules/canvas/*": ["canvas/*"]
+      "canvas": ["../../lambda-layer-canvas-nodejs/nodejs/node_modules/canvas"]
     },
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
