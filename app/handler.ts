@@ -38,7 +38,7 @@ export const hakuna: Handler = (event: any, context: Context) => {
 
       return {
         statusCode: 200,
-        headers: { 'Content-Type': 'image/png', 'Content-Length': `${img.length}` },
+        // headers: { 'Content-Type': 'image/png', 'Content-Length': `${img.length}` },
         body: dataurl,
       };
     })
