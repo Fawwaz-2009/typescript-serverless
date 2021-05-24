@@ -59,14 +59,14 @@ provider:
 #    - include-me-dir/**
 
 functions:
-  hello:
-    handler: app/handler.hakuna
-    events:
-      - http:
-          path: hakuna
-          method: post
-    layers: # An optional list Lambda Layers to use
-      - arn:aws:lambda:us-east-1:786754609977:layer:canvas-nodejs:1 # Layer Version ARN
+  # hello:
+  #   handler: app/handler.hakuna
+  #   events:
+  #     - http:
+  #         path: hakuna
+  #         method: post
+  #   layers: # An optional list Lambda Layers to use
+  #     - arn:aws:lambda:us-east-1:786754609977:layer:canvas-nodejs:1 # Layer Version ARN
 
   getTest:
     handler: app/handler.getTest
