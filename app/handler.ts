@@ -1,7 +1,7 @@
 import { Handler, Context } from 'aws-lambda';
 import debug from 'debug';
 import { creatImageFromTemplate } from './services/moozCanvas';
-import { Canvas } from "canvas"
+import { createCanvas } from "../../lambda-layer-canvas-nodejs/nodejs/node_modules/canvas"
 
 // import dotenv from 'dotenv';
 // import path from 'path';
@@ -56,7 +56,7 @@ const httpLogger = debug('http');
 // };
 
 export const getTest: Handler = (event: any, context: Context) => {
-  console.log(canvas)
+  console.log(createCanvas)
   return Promise.resolve({
     statusCode: 200,
     body: JSON.stringify(
